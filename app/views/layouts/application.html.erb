@@ -7,8 +7,46 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="content" class="container">
+    <header id="content-header">
+        <div id="price-container">
+          <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+        </div>
+        <img id="content-header-img" src="img/header-image.jpg" alt="Learn Growth Hacking">
+    </header>
 
-<%= yield %>
+    <%= yield %>
+
+  </div>
+
+  <footer id="site-footer">
+    Made by <a href="http://onemonth.com" target="_blank"><img id="one-month-footer-logo" src="img/one-month-logo.svg" alt="One Month"></a>
+  </footer>
+
+  <div class="modal fade" id="author-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span>About the Teacher</h4>
+        </div>
+        <div class="modal-body clearfix">
+              <div id="modal-left" class="pull-left">
+                  <p><strong>Mattan Griffel</strong></p>
+                  <p>Hey, I'm Mattan Griffel, co-founder of the Y Combinator backed <a href="http://www.onemonth.com" target="_blank">One Month</a> where I teach the best selling One Month Rails and One Month Growth Hacking.</p>
+                  <p>Why take my class? In the past I've advised companies like Pepsico, Bloomberg, GM, NYSE, and JPMorgan on growth hacking best practices. I've also spoken at New York University, Cooper Union and First Round Capital. My goal is to help you and other entrepreneurs rapidly grow your business.
+                  </p>
+                  <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>
+              </div>
+              <div id="modal-right" class="pull-right">
+                  <img src="img/teacher-image.jpg" alt="Mattan Griffel">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
