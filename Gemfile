@@ -24,3 +24,4 @@ end
 gem 'bootstrap-sass'
 gem "font-awesome-rails"
 gem 'stripe', '~> 1.15.0'
+gem 'figaro', github: 'sealocal/figaro'
